@@ -1,0 +1,17 @@
+# Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# ML Models & Datasets (Optional, uncomment if large files)
+# *.pt
+# *.pkl
+# *.csv
+
+# macOS
+.DS_Store
+
+# Frontend
+pricedekho-ui/node_modules/
+pricedekho-ui/dist/
+pricedekho-ui/.eslintcache

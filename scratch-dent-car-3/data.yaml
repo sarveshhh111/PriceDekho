@@ -1,0 +1,14 @@
+names:
+- dent
+- scratch
+- broken
+nc: 3
+roboflow:
+  license: CC BY 4.0
+  project: scratch-dent-car
+  url: https://universe.roboflow.com/car-damage-ymlgz/scratch-dent-car/dataset/3
+  version: 3
+  workspace: car-damage-ymlgz
+test: ../test/images
+train: ../train/images
+val: ../valid/images
