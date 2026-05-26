@@ -3,6 +3,8 @@ import axios from 'axios';
 import { UploadCloud, CheckCircle2, AlertCircle } from 'lucide-react';
 import './App.css';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
 function App() {
   const [formData, setFormData] = useState({
     year: 2018,
@@ -55,7 +57,7 @@ function App() {
     submitData.append('image', file);
 
     try {
-      const response = await axios.post('http://localhost:8000/predict', submitData, {
+      const response = await axios.post(`${API_URL}/predict`, submitData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
